@@ -39,8 +39,12 @@
 </head>
 <body class="text-gray-800 antialiased overflow-x-hidden">
 
-    <!-- HEADER SUPER LUCU -->
-    <header class="relative bg-gradient-to-br from-cyan-400 via-blue-400 to-purple-400 text-white pt-12 pb-20 px-4 text-center overflow-hidden shadow-xl rounded-b-[3rem] border-b-8 border-yellow-300">
+    <!-- HEADER DENGAN BACKGROUND GAMBAR -->
+    <header class="relative bg-cover bg-center text-white pt-12 pb-20 px-4 text-center overflow-hidden shadow-xl rounded-b-[3rem] border-b-8 border-yellow-300" style="background-image: url('hero-bg.jpg');">
+        
+        <!-- Overlay hitam transparan agar teks "TUMBUHARA" tetap kontras dan mudah dibaca -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
         <!-- Hiasan Bulatan Latar Belakang -->
         <div class="absolute top-0 left-10 w-32 h-32 bg-white opacity-20 rounded-full blur-2xl"></div>
         <div class="absolute bottom-0 right-10 w-48 h-48 bg-yellow-300 opacity-20 rounded-full blur-2xl"></div>
@@ -58,7 +62,7 @@
         <h1 class="text-4xl md:text-5xl font-extrabold mb-3 drop-shadow-lg tracking-wide z-10 relative text-yellow-100">
             🍼 TUMBUHARA 🍼
         </h1>
-        <p class="text-white text-lg md:text-xl font-bold max-w-2xl mx-auto drop-shadow-md z-10 relative bg-black bg-opacity-20 inline-block px-6 py-2 rounded-full">
+        <p class="text-white text-lg md:text-xl font-bold max-w-2xl mx-auto drop-shadow-md z-10 relative bg-black bg-opacity-30 inline-block px-6 py-2 rounded-full">
             Tumbuh Kembang Balita Bersama Keluarga
         </p>
     </header>
@@ -206,7 +210,7 @@
                                     <td class="p-3">Makanan halus dan lumat (bubur saring, bubur halus, pure)</td>
                                     <td class="p-3">2 - 3 kali makan utama dan 1 - 2 kali selingan.</td>
                                     <td class="p-3 text-center">
-                                        <img src="makanan1.jpeg" alt="Makanan halus dan lumat 6-8 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
+                                        <img src="makanan1.jpg" alt="Makanan halus dan lumat 6-8 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
                                     </td>
                                 </tr>
                                 <tr class="border-b border-pink-100 bg-pink-50 hover:bg-pink-100">
@@ -214,7 +218,7 @@
                                     <td class="p-3">Makanan dicincang halus atau kasar sesuai kemampuan</td>
                                     <td class="p-3">3 - 4 kali makan utama dan 1 - 2 kali camilan padat energi dengan ASI tetap diberikan.</td>
                                     <td class="p-3 text-center">
-                                        <img src="makanan2.jpeg" alt="Makanan dicincang 9-11 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
+                                        <img src="makanan2.jpg" alt="Makanan dicincang 9-11 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
                                     </td>
                                 </tr>
                                 <tr class="border-b border-pink-100 hover:bg-pink-50">
@@ -222,7 +226,7 @@
                                     <td class="p-3">Makanan keluarga, dipotong kecil atau dicincang</td>
                                     <td class="p-3">3 - 4 kali makan utama dan 1 - 2 kali camilan padat gizi.</td>
                                     <td class="p-3 text-center">
-                                        <img src="makanan3.jpeg" alt="Makanan keluarga dicincang 12-23 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
+                                        <img src="makanan3.jpg" alt="Makanan keluarga dicincang 12-23 bulan" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
                                     </td>
                                 </tr>
                                 <tr class="border-b border-pink-100 bg-pink-50 hover:bg-pink-100">
@@ -230,7 +234,7 @@
                                     <td class="p-3">Makanan keluarga (tidak terlalu pedas, asin, dan manis)</td>
                                     <td class="p-3">3 kali makan utama dan 2 kali camilan sehat.</td>
                                     <td class="p-3 text-center">
-                                        <img src="makanan4.jpeg" alt="Makanan keluarga 2-5 tahun" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
+                                        <img src="makanan4.jpg" alt="Makanan keluarga 2-5 tahun" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-xl border-2 border-pink-300 shadow-sm mx-auto">
                                     </td>
                                 </tr>
                             </tbody>
@@ -407,16 +411,11 @@
                         </table>
                     </div>
 
-                    <h5 class="font-bold text-emerald-800 mb-2">Cara cuci tangan yang benar:</h5>
-                    <ol class="list-decimal pl-6 space-y-1 text-sm text-gray-700">
-                        <li>Basahi kedua tangan dengan air bersih yang mengalir.</li>
-                        <li>Beri sabun secukupnya.</li>
-                        <li>Gosok kedua telapak tangan.</li>
-                        <li>Gosok punggung tangan dan sela-sela jari.</li>
-                        <li>Gosok ujung jari dan kuku (tempat kuman bersembunyi).</li>
-                        <li>Gosok kedua ibu jari dengan cara memutar.</li>
-                        <li>Bilas sampai bersih, lalu keringkan dengan lap bersih atau udara.</li>
-                    </ol>
+                    <!-- GAMBAR INFOGRAFIS 7 CARA CUCI TANGAN -->
+                    <h5 class="font-bold text-emerald-800 mb-3">Cara cuci tangan yang benar:</h5>
+                    <div class="mt-3 text-center">
+                        <img src="cuci-tangan.jpg" alt="7 Cara Mencuci Tangan" class="w-full max-w-lg mx-auto rounded-2xl border-4 border-emerald-300 shadow-md">
+                    </div>
                 </div>
 
                 <div class="bg-white p-5 rounded-2xl shadow-sm border border-emerald-100">
